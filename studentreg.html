@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 5px 0;
+    margin-left: 90px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 200px;
+    background-color: transparent;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+h3 {
+    background-color: green;
+    border:2px solid blue;
+    width: 500px;
+}
+
+input[type=submit]:hover {
+    background-color: #9abcde;
+    border:2px solid green;
+    margin-left: 50px;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #5abcde;
+    padding: 30px
+    width: 500px;
+}
+</style>
+<body>
+
+<h3>Student Registration Form</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br/>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br/>
+    
+    <label for="emailadd">Email Address</label>
+    <input type="text" id="emailadd" email="emailaddress" placeholder="Your email address.."><br/>
+    
+    <label for="DOB">Date of Birth</label>
+    <input type="text" id="DOB" dob="dateofbirth" placeholder="Your date of birth.."><br/>
+    
+    <label for="mobno">Mobile Number</label>
+    <input type="text" id="mobno" mobno="mobilenumber" placeholder="Your Mobile Number.."><br/>
+    
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select><br/>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
